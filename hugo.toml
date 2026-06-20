@@ -4,20 +4,17 @@ title = "Sarath Sek"
 theme = "PaperMod"
 
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+[[menu.main]]
+name = "About"
+url = "https://enoracle.github.io/about/"
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+[[menu.main]]
+name = "Blog"
+url = "https://enoracle.github.io/posts/"
 
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 3
+[[menu.main]]
+name = "Experience"
+url = "https://enoracle.github.io/experience/"
 
 [params.profileMode]
 enabled = true
@@ -34,15 +31,15 @@ imageHeight = 160
 
 [[params.profileMode.buttons]]
 name = "About"
-url = "/about"
+url = "https://enoracle.github.io/about/"
 
 [[params.profileMode.buttons]]
 name = "Blog"
-url = "/posts"
+url = "https://enoracle.github.io/posts/"
 
 [[params.profileMode.buttons]]
 name = "Experience"
-url = "/experience"
+url = "https://enoracle.github.io/experience/"
 
 [[params.socialIcons]]
 name = "github"
