@@ -1,5 +1,5 @@
 ---
-title: "Can a Logged-In Surevey Really Be Anonymous? A Data Ethics Perspective"
+title: "Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective"
 date: 2026-06-19
 draft: false
 ---
