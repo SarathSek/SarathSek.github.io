@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://enoracle.github.io/"
 languageCode = "en-us"
 title = "Sarath Sek"
 theme = "PaperMod"
