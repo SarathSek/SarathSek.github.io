@@ -4,17 +4,26 @@ title = "Sarath Sek"
 theme = "PaperMod"
 
 [menu]
+
+[[menu.main]]
+name = "Home"
+url = "https://enoracle.github.io/"
+weight = 1
+
 [[menu.main]]
 name = "About"
 url = "https://enoracle.github.io/about/"
+weight = 2
 
 [[menu.main]]
 name = "Blog"
 url = "https://enoracle.github.io/posts/"
+weight = 3
 
 [[menu.main]]
 name = "Experience"
 url = "https://enoracle.github.io/experience/"
+weight = 4
 
 [params.profileMode]
 enabled = true
