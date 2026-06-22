@@ -1,4 +1,4 @@
-baseURL = "https://enoracle.github.io/"
+baseURL = "https://sarathsek.github.io/"
 languageCode = "en-us"
 title = "Sarath Sek"
 theme = "PaperMod"
@@ -7,22 +7,22 @@ theme = "PaperMod"
 
 [[menu.main]]
 name = "Home"
-url = "https://enoracle.github.io/"
+url = "https://sarathsek.github.io/"
 weight = 1
 
 [[menu.main]]
 name = "About"
-url = "https://enoracle.github.io/about/"
+url = "https://sarathsek.github.io/"
 weight = 2
 
 [[menu.main]]
 name = "Blog"
-url = "https://enoracle.github.io/posts/"
+url = "https://sarathsek.github.io/posts/"
 weight = 3
 
 [[menu.main]]
 name = "Experience"
-url = "https://enoracle.github.io/experience/"
+url = "https://sarathsek.github.io/experience/"
 weight = 4
 
 [params.profileMode]
@@ -40,15 +40,15 @@ imageHeight = 160
 
 [[params.profileMode.buttons]]
 name = "About"
-url = "https://enoracle.github.io/about/"
+url = "https://sarathsek.github.io/about/"
 
 [[params.profileMode.buttons]]
 name = "Blog"
-url = "https://enoracle.github.io/posts/"
+url = "https://sarathsek.github.io/posts/"
 
 [[params.profileMode.buttons]]
 name = "Experience"
-url = "https://enoracle.github.io/experience/"
+url = "https://sarathsek.github.io/experience/"
 
 [[params.socialIcons]]
 name = "github"
