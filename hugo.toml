@@ -17,7 +17,7 @@ weight = 2
 
 [[menu.main]]
 name = "Blog"
-url = "https://sarathsek.github.io/posts/"
+url = "https://sarathsek.github.io/blog/
 weight = 3
 
 [[menu.main]]
@@ -44,7 +44,7 @@ url = "https://sarathsek.github.io/about/"
 
 [[params.profileMode.buttons]]
 name = "Blog"
-url = "https://sarathsek.github.io/posts/"
+url = "https://sarathsek.github.io/blog/"
 
 [[params.profileMode.buttons]]
 name = "Experience"
@@ -52,7 +52,7 @@ url = "https://sarathsek.github.io/experience/"
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/EnOracle"
+url = "https://github.com/SarathSek"
 
 [[params.socialIcons]]
 name = "linkedin"
