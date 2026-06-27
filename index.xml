@@ -6,8 +6,17 @@
     <description>Recent content on Sarath Sek</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sarathsek.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why AI Ethics Matters</title>
+      <link>https://sarathsek.github.io/blog/why-ai-ethics-matters/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://sarathsek.github.io/blog/why-ai-ethics-matters/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;why-ai-ethics-matters&#34;&gt;Why AI Ethics Matters&lt;/h1&gt;
+&lt;p&gt;Artificial intelligence is becoming part of our everyday lives, from the apps we use to the services we rely on. As AI continues to evolve, understanding the ethical challenges behind these technologies is just as important as learning how to build them. In this post, I explore some of the key ethical considerations, including privacy, fairness, transparency, and accountability, and reflect on why responsible AI development matters.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective</title>
       <link>https://sarathsek.github.io/blog/first-blog/</link>
@@ -16,13 +25,6 @@
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.&lt;/p&gt;
 &lt;p&gt;However, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: &lt;strong&gt;Can a survey really be anonymous if students have to log in first?&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://sarathsek.github.io/blog/why-ai-ethics-matters/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sarathsek.github.io/blog/why-ai-ethics-matters/</guid>
-      <description></description>
     </item>
     <item>
       <title>About Me</title>
