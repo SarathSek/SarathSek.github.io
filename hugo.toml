@@ -17,7 +17,7 @@ weight = 2
 
 [[menu.main]]
 name = "Blog"
-url = "https://sarathsek.github.io/blog/
+url = "https://sarathsek.github.io/blog/"
 weight = 3
 
 [[menu.main]]
