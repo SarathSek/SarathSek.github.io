@@ -21,9 +21,9 @@ Worked as part of the game development team creating and optimizing 3D game asse
 
 ## Mobile Developer
 
-**African Marketplace Project, Mississippi**
+**African Marketplace Project, Mississauga, Ontario**a**
 
-Contributed to the development of a mobile platform designed for an African marketplace based in Mississippi. Worked on implementing mobile features, improving user experience, and developing solutions to support business and customer needs.
+Contributed to the development of a mobile platform designed for an African marketplace based in Mississauga, Onatario. Worked on implementing mobile features, improving user experience, and developing solutions to support business and customer needs.
 
 **Key Responsibilities**
 
