@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective | Sarath Sek</title>
+<meta name="keywords" content="">
+<meta name="description" content="Introduction
+Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.
+However, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: Can a survey really be anonymous if students have to log in first?">
+<meta name="author" content="">
+<link rel="canonical" href="https://sarathsek.github.io/blog/first-blog/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f5cfe13e9d0682f01df443d42e1bebf6d5cb2718d2cdd68f728b57f95963f9a5.css" integrity="sha256-9c/hPp0GgvAd9EPULhvr9tXLJxjSzdaPcotX&#43;Vlj&#43;aU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sarathsek.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sarathsek.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sarathsek.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sarathsek.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sarathsek.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sarathsek.github.io/blog/first-blog/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://sarathsek.github.io/blog/first-blog/">
+  <meta property="og:site_name" content="Sarath Sek">
+  <meta property="og:title" content="Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective">
+  <meta property="og:description" content="Introduction Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.
+However, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: Can a survey really be anonymous if students have to log in first?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-06-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-19T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective">
+  <meta name="twitter:description" content="Introduction Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.
+However, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: Can a survey really be anonymous if students have to log in first?">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://sarathsek.github.io/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective",
+      "item": "https://sarathsek.github.io/blog/first-blog/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective",
+  "name": "Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective",
+  "description": "Introduction Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.\nHowever, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: Can a survey really be anonymous if students have to log in first?\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Introduction Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.\nHowever, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: Can a survey really be anonymous if students have to log in first?\nIn this blog, I will discuss the ethical issues in this survey, other possible concerns, recommendations for management, and what I would do as a Data Analyst if my recommendations were not accepted.\nThe Problem In this scenario, students are asked to complete an online course survey. The survey states that all responses are anonymous and will help management decide which courses need improvements.\nAt first, this sounds like a good idea. Student feedback is important and can help improve education.\nHowever, students are required to log in using their username and password before taking the survey. This creates a problem because login information may allow the school to identify who submitted each response.\nIf students think their answers can be traced back to them, they may not feel comfortable sharing honest opinions.\nThis creates an ethical concern because the survey promises anonymity while collecting information that could identify students.\n1. Privacy Privacy means protecting people’s personal information.\nStudents expect their opinions to remain private. If their usernames are connected to their responses, their privacy may not be fully protected.\n2. Anonymity Anonymity means that nobody can tell who submitted the survey.\nIf students have to log in, the school may be able to connect responses to individual students.\nThis makes the claim of anonymity questionable.\n3. Transparency Transparency means being honest about how data is collected and used.\nStudents should know:\nWhat information is collected Why it is collected Who can see it How long it will be stored Being transparent helps build trust.\n4. Informed Consent Students should understand exactly what they are agreeing to before submitting their answers.\nThey should know:\nWhy they must log in Whether their identity can be linked to their answers How their data will be protected Without this information, students cannot give informed consent.\n5. Accountability Organizations should be responsible for protecting the information they collect.\nIf data is leaked or misused, someone must be accountable.\nSchools should have policies to protect student information and handle data responsibly.\nEthical Risk of Data Collected The more identifying information a survey collects, the higher the ethical risk becomes.\nFigure 1: Risk level of different types of data collected in the survey.\nAnother concern is data breaches.\nIf hackers gain access to the survey system, personal information and responses could be exposed.\nStudents may also fear retaliation. They may worry that negative comments could affect how instructors see them or impact future opportunities.\nThere is also the possibility of biased data. If students do not trust the survey, they may avoid giving honest answers. This can lead to inaccurate results and poor decisions.\nFinally, the school should consider how long survey data is stored and whether it is really necessary to keep login information after the survey is completed.\nAs a Data Analyst, I would recommend several improvements.\nFirst, the survey should be truly anonymous. Instead of requiring usernames and passwords, students could use a random survey code.\nSecond, the school should collect only the information that is necessary. If usernames are not needed, they should not be collected.\nThird, the school should clearly explain:\nWhat data is collected Why it is collected Who can access it How long it is stored Finally, strong security measures such as encryption and access controls should be used to protect student information.\nIf management rejected my recommendations, I would still act professionally.\nFirst, I would document my concerns and explain why I believe the current system has ethical issues.\nSecond, I would discuss the matter with supervisors or an ethics committee if one exists.\nMost importantly, I would remain honest. I would not tell students that the survey is completely anonymous if I know that it is not.\nAs a future Data Analyst, I believe protecting people’s privacy and being honest about how data is used are important responsibilities.\nConclusion This survey raises an important ethical question: Can a logged-in survey really be anonymous?\nAlthough collecting student feedback is valuable, schools must be careful about how they collect and use personal information. Ethical concepts such as privacy, anonymity, transparency, informed consent, and accountability should always be considered.\nAs technology continues to grow, data professionals have an important role in protecting users and building trust. Ethical decisions are not just about following rules—they are about respecting people and using data responsibly.\nIn my opinion, a survey designed to improve education should never come at the cost of student trust and privacy. ",
+  "wordCount" : "827",
+  "inLanguage": "en",
+  "datePublished": "2026-06-19T00:00:00Z",
+  "dateModified": "2026-06-19T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sarathsek.github.io/blog/first-blog/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sarath Sek",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sarathsek.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://sarathsek.github.io/" accesskey="h" title="Sarath Sek (Alt + H)">Sarath Sek</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://sarathsek.github.io/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sarathsek.github.io/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sarathsek.github.io/experience/" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-06-19 00:00:00 +0000 UTC'>June 19, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Nowadays, data is everywhere. Schools, businesses, and organizations collect data to improve their services and make better decisions. One common example is student course surveys. These surveys allow students to give feedback about their classes and help schools improve courses for future students.</p>
+<p>However, ethical issues can arise when surveys claim to be anonymous but still require students to log in with their username and password. This raises an important question: <strong>Can a survey really be anonymous if students have to log in first?</strong></p>
+<p>In this blog, I will discuss the ethical issues in this survey, other possible concerns, recommendations for management, and what I would do as a Data Analyst if my recommendations were not accepted.</p>
+<hr>
+<h2 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h2>
+<p>In this scenario, students are asked to complete an online course survey. The survey states that all responses are anonymous and will help management decide which courses need improvements.</p>
+<p>At first, this sounds like a good idea. Student feedback is important and can help improve education.</p>
+<p>However, students are required to log in using their username and password before taking the survey. This creates a problem because login information may allow the school to identify who submitted each response.</p>
+<p>If students think their answers can be traced back to them, they may not feel comfortable sharing honest opinions.</p>
+<p>This creates an ethical concern because the survey promises anonymity while collecting information that could identify students.</p>
+<hr>
+<h3 id="1-privacy">1. Privacy<a hidden class="anchor" aria-hidden="true" href="#1-privacy">#</a></h3>
+<p>Privacy means protecting people&rsquo;s personal information.</p>
+<p>Students expect their opinions to remain private. If their usernames are connected to their responses, their privacy may not be fully protected.</p>
+<hr>
+<h3 id="2-anonymity">2. Anonymity<a hidden class="anchor" aria-hidden="true" href="#2-anonymity">#</a></h3>
+<p>Anonymity means that nobody can tell who submitted the survey.</p>
+<p>If students have to log in, the school may be able to connect responses to individual students.</p>
+<p>This makes the claim of anonymity questionable.</p>
+<hr>
+<h3 id="3-transparency">3. Transparency<a hidden class="anchor" aria-hidden="true" href="#3-transparency">#</a></h3>
+<p>Transparency means being honest about how data is collected and used.</p>
+<p>Students should know:</p>
+<ul>
+<li>What information is collected</li>
+<li>Why it is collected</li>
+<li>Who can see it</li>
+<li>How long it will be stored</li>
+</ul>
+<p>Being transparent helps build trust.</p>
+<hr>
+<h3 id="4-informed-consent">4. Informed Consent<a hidden class="anchor" aria-hidden="true" href="#4-informed-consent">#</a></h3>
+<p>Students should understand exactly what they are agreeing to before submitting their answers.</p>
+<p>They should know:</p>
+<ul>
+<li>Why they must log in</li>
+<li>Whether their identity can be linked to their answers</li>
+<li>How their data will be protected</li>
+</ul>
+<p>Without this information, students cannot give informed consent.</p>
+<hr>
+<h3 id="5-accountability">5. Accountability<a hidden class="anchor" aria-hidden="true" href="#5-accountability">#</a></h3>
+<p>Organizations should be responsible for protecting the information they collect.</p>
+<p>If data is leaked or misused, someone must be accountable.</p>
+<p>Schools should have policies to protect student information and handle data responsibly.</p>
+<hr>
+<h2 id="ethical-risk-of-data-collected">Ethical Risk of Data Collected<a hidden class="anchor" aria-hidden="true" href="#ethical-risk-of-data-collected">#</a></h2>
+<p>The more identifying information a survey collects, the higher the ethical risk becomes.</p>
+<p><img alt="Ethical Risk Chart" loading="lazy" src="/images/ethical-risk-chart.png"></p>
+<p><em>Figure 1: Risk level of different types of data collected in the survey.</em></p>
+<hr>
+<p>Another concern is data breaches.</p>
+<p>If hackers gain access to the survey system, personal information and responses could be exposed.</p>
+<p>Students may also fear retaliation. They may worry that negative comments could affect how instructors see them or impact future opportunities.</p>
+<p>There is also the possibility of biased data. If students do not trust the survey, they may avoid giving honest answers. This can lead to inaccurate results and poor decisions.</p>
+<p>Finally, the school should consider how long survey data is stored and whether it is really necessary to keep login information after the survey is completed.</p>
+<hr>
+<p>As a Data Analyst, I would recommend several improvements.</p>
+<p>First, the survey should be truly anonymous. Instead of requiring usernames and passwords, students could use a random survey code.</p>
+<p>Second, the school should collect only the information that is necessary. If usernames are not needed, they should not be collected.</p>
+<p>Third, the school should clearly explain:</p>
+<ul>
+<li>What data is collected</li>
+<li>Why it is collected</li>
+<li>Who can access it</li>
+<li>How long it is stored</li>
+</ul>
+<p>Finally, strong security measures such as encryption and access controls should be used to protect student information.</p>
+<hr>
+<p>If management rejected my recommendations, I would still act professionally.</p>
+<p>First, I would document my concerns and explain why I believe the current system has ethical issues.</p>
+<p>Second, I would discuss the matter with supervisors or an ethics committee if one exists.</p>
+<p>Most importantly, I would remain honest. I would not tell students that the survey is completely anonymous if I know that it is not.</p>
+<p>As a future Data Analyst, I believe protecting people&rsquo;s privacy and being honest about how data is used are important responsibilities.</p>
+<hr>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>This survey raises an important ethical question: Can a logged-in survey really be anonymous?</p>
+<p>Although collecting student feedback is valuable, schools must be careful about how they collect and use personal information. Ethical concepts such as privacy, anonymity, transparency, informed consent, and accountability should always be considered.</p>
+<p>As technology continues to grow, data professionals have an important role in protecting users and building trust. Ethical decisions are not just about following rules—they are about respecting people and using data responsibly.</p>
+<h2 id="in-my-opinion-a-survey-designed-to-improve-education-should-never-come-at-the-cost-of-student-trust-and-privacy">In my opinion, a survey designed to improve education should never come at the cost of student trust and privacy.<a hidden class="anchor" aria-hidden="true" href="#in-my-opinion-a-survey-designed-to-improve-education-should-never-come-at-the-cost-of-student-trust-and-privacy">#</a></h2>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sarathsek.github.io/">Sarath Sek</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+
+
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
