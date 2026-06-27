@@ -6,23 +6,18 @@ theme = "PaperMod"
 [menu]
 
 [[menu.main]]
-name = "Home"
-url = "https://sarathsek.github.io/"
-weight = 1
-
-[[menu.main]]
 name = "About"
-url = "https://sarathsek.github.io/"
+url = "/about/"
 weight = 2
 
 [[menu.main]]
 name = "Blog"
-url = "https://sarathsek.github.io/blog/"
+url = "/blog/"
 weight = 3
 
 [[menu.main]]
 name = "Experience"
-url = "https://sarathsek.github.io/experience/"
+url = "/experience/"
 weight = 4
 
 [params.profileMode]
@@ -40,15 +35,15 @@ imageHeight = 160
 
 [[params.profileMode.buttons]]
 name = "About"
-url = "https://sarathsek.github.io/about/"
+url = "/about/"
 
 [[params.profileMode.buttons]]
 name = "Blog"
-url = "https://sarathsek.github.io/blog/"
+url = "/blog/"
 
 [[params.profileMode.buttons]]
 name = "Experience"
-url = "https://sarathsek.github.io/experience/"
+url = "/experience/"
 
 [[params.socialIcons]]
 name = "github"
@@ -71,3 +66,5 @@ ShowReadingTime = false
 ShowShareButtons = false
 ShowPostNavLinks = false
 ShowCodeCopyButtons = false
+
+mainSections = ["blog"]
