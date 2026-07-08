@@ -78,3 +78,6 @@ ShowPostNavLinks = false
 ShowCodeCopyButtons = false
 
 mainSections = ["blog"]
+
+[markup.goldmark.renderer]
+unsafe = true

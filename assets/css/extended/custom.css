@@ -129,3 +129,49 @@ body,
     box-shadow:
         0 10px 30px rgba(0,0,0,.25);
 }
+
+/* Keep existing website background */
+/* Website background */
+body {
+    background-image: url("/images/background01.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* Blog article container */
+.post-single {
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 25px;
+    padding: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+    backdrop-filter: blur(12px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Blog listing page cards */
+.post-entry {
+    background: rgba(255,255,255,0.88);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+
+/* Keep the page background visible */
+.main {
+    background: transparent;
+}
+
+
+/* Improve text readability */
+.post-content {
+    line-height: 1.8;
+}
