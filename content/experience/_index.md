@@ -2,33 +2,63 @@
 title: "Experience"
 ---
 
+<h1>Technical Skills</h1>
 
-## Video Game Artist
+<div class="tech-grid">
 
-**Diamond Game**
+<div class="tech-card">
+<span class="tech-title">DATA ANALYTICS</span>
 
-Worked as part of the game development team creating and optimizing 3D game assets using Unreal Engine. Responsible for preparing models with UV mapping, applying textures, and assisting with backend asset integration to ensure smooth implementation within the game environment.
+<div class="skill-tags">
+<span>Python</span>
+<span>Pandas</span>
+<span>NumPy</span>
+<span>SQL</span>
+<span>Power BI</span>
+<span>Visualization</span>
+</div>
 
-**Key Responsibilities**
+</div>
 
-* Created and optimized 3D models for game assets
-* Performed UV mapping and texture creation
-* Worked with Unreal Engine for asset integration
-* Collaborated with team members to improve visual quality
-* Assisted with backend asset organization and workflow
 
----
+<div class="tech-card">
+<span class="tech-title">ARTIFICIAL INTELLIGENCE</span>
 
-## Mobile Developer
+<div class="skill-tags">
+<span>Machine Learning</span>
+<span>AI Models</span>
+<span>Data Ethics</span>
+<span>Model Evaluation</span>
+<span>Generative AI</span>
+</div>
 
-**African Marketplace Project, Mississauga, Ontario**a**
+</div>
 
-Contributed to the development of a mobile platform designed for an African marketplace based in Mississauga, Onatario. Worked on implementing mobile features, improving user experience, and developing solutions to support business and customer needs.
 
-**Key Responsibilities**
+<div class="tech-card">
+<span class="tech-title">SOFTWARE DEVELOPMENT</span>
 
-* Developed and maintained mobile application features
-* Improved user interface and user experience
-* Collaborated with the development team on project requirements
-* Tested and debugged application functionality
-* Assisted in delivering solutions for real-world business needs
+<div class="skill-tags">
+<span>Java</span>
+<span>C#</span>
+<span>JavaScript</span>
+<span>APIs</span>
+<span>Git</span>
+</div>
+
+</div>
+
+
+<div class="tech-card">
+<span class="tech-title">GAME TECHNOLOGY</span>
+
+<div class="skill-tags">
+<span>Unreal Engine</span>
+<span>3D Modeling</span>
+<span>UV Mapping</span>
+<span>Texturing</span>
+</div>
+
+</div>
+
+</div>

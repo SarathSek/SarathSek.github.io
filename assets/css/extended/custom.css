@@ -175,3 +175,95 @@ body {
 .post-content {
     line-height: 1.8;
 }
+
+/* Experience card layout */
+
+.tech-card {
+
+    background: rgba(255,255,255,0.82);
+
+    border: 1px solid rgba(0,120,255,0.20);
+
+    border-radius:15px;
+
+    padding:30px;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.12);
+
+    /* Mouse hover movement */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transform-style: preserve-3d;
+
+    will-change: transform;
+
+}
+
+
+.tech-card:hover {
+
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 20px 45px rgba(0,120,255,0.25);
+
+}
+
+
+.tech-title {
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#0f3d66;
+
+    margin-bottom:20px;
+
+}
+
+
+.skill-tags {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+.skill-tags span {
+
+    background:none;
+
+    border:none;
+
+    padding:0;
+
+    color:#0f3d66;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+.tech-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 25px !important;
+}
+
+
+.tech-card {
+    display: block !important;
+}
