@@ -81,3 +81,5 @@ mainSections = ["blog"]
 
 [markup.goldmark.renderer]
 unsafe = true
+
+publishDir = "."
