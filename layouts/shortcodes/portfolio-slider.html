@@ -1,0 +1,196 @@
+<div class="portfolio-wrapper">
+
+    <button class="portfolio-arrow left" onclick="moveSlide(-1)">
+        ◀
+    </button>
+
+
+    <div class="portfolio-showcase">
+
+
+        <div class="portfolio-slide active">
+
+            <h1>Data Analytics Projects</h1>
+
+            <p>
+            Analyze datasets, create visualizations,
+            and discover meaningful insights using data.
+            </p>
+
+            <a href="#data-analytics" class="portfolio-button">
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="portfolio-slide">
+
+            <h1>Mobile Development</h1>
+
+            <p>
+            Building applications with focus on design,
+            functionality, and user experience.
+            </p>
+
+            <a href="#mobile-development" class="portfolio-button">
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="portfolio-slide">
+
+            <h1>Game Development Art</h1>
+
+            <p>
+            Creating 3D assets, textures,
+            and interactive environments.
+            </p>
+
+            <a href="#game-development" class="portfolio-button">
+                View Project
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <button class="portfolio-arrow right" onclick="moveSlide(1)">
+        ▶
+    </button>
+
+
+</div>
+
+
+<div class="portfolio-dots">
+
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+</div>
+
+
+<script>
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".portfolio-slide");
+const dots = document.querySelectorAll(".dot");
+
+
+function moveSlide(direction){
+
+    slides[currentSlide].classList.remove("active");
+    dots[currentSlide].classList.remove("active");
+
+
+    currentSlide += direction;
+
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+
+    if(currentSlide < 0){
+        currentSlide = slides.length - 1;
+    }
+
+
+    slides[currentSlide].classList.add("active");
+    dots[currentSlide].classList.add("active");
+
+}
+
+</script>
+
+<div class="portfolio-cards">
+
+
+    <div id="data-analytics" class="portfolio-card">
+
+        <img src="/images/Smartphone_Dashboard.png">
+
+        <h2>Smartphone Purchasing Behavior Analysis</h2>
+
+        <p>
+            A Power BI data analytics project analyzing smartphone purchasing
+            behavior, customer trends, and insights through interactive dashboards
+            and data visualization.
+        </p>
+
+        <a href="/blog/smartphone-purchasing-behavior/" class="portfolio-button">
+            View Project
+        </a>
+
+    </div>
+
+
+
+    <div id="ai-ethics" class="portfolio-card">
+
+
+        <h2>AI Ethics & Data Privacy Analysis</h2>
+
+        <p>
+            A data ethics project exploring privacy, bias, transparency,
+            and responsible AI practices using research and data visualization.
+        </p>
+
+        <a href="/blog/why-ai-ethics-matters/" class="portfolio-button">
+            View Article
+        </a>
+
+    </div>
+
+<div id="mobile-development" class="portfolio-card">
+
+    <h2>📱 Mobile Development</h2>
+
+    <p>
+        Mobile applications developed with experience
+        in application design, user interfaces,
+        programming, and software development.
+    </p>
+
+    <a href="https://github.com/SarathSek"
+       target="_blank"
+       class="portfolio-button">
+
+        View GitHub Projects
+
+    </a>
+
+</div>
+
+
+
+<div id="game-development" class="portfolio-card">
+
+    <h2>🎮 Game Development & 3D Art</h2>
+
+    <p>
+        Explore my 3D modeling, texturing, UV mapping,
+        and Unreal Engine projects created for interactive environments.
+        View my complete game art portfolio.
+    </p>
+
+    <a href="https://sarathsek.weebly.com/" 
+       target="_blank"
+       class="portfolio-button">
+
+        View 3D Portfolio
+
+    </a>
+
+</div>
+
+
+</div>

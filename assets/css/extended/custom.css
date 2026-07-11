@@ -3,29 +3,17 @@
 ========================= */
 
 body::before {
-
     content: "";
-
     position: fixed;
-
     inset: 0;
 
-    background:
-
-    linear-gradient(
+    background: linear-gradient(
         rgba(25,50,80,.25),
         rgba(20,35,60,.30)
-    ),
-
-    url("/images/background01.png");
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
+    );
 
     z-index: -1;
+    pointer-events: none;
 }
 
 
@@ -62,7 +50,7 @@ html[data-theme="dark"] body::before {
 
 
 .main {
-    max-width: 980px;
+    max-width: 1200px;
     margin: 30px auto;
     padding: 40px;
     min-height: 80vh;
@@ -766,4 +754,652 @@ html[data-theme="dark"] .sidebar-menu a:hover {
 
     transition:all .3s ease;
 
+}
+/* =========================
+   AI Motion Background
+========================= */
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    pointer-events: none;
+}
+
+
+/* Keep content above animation */
+
+body {
+    position: relative;
+}
+
+.main,
+.profile,
+.post-single {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   AI Motion Background
+========================= */
+
+#particles-js {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* Background image stays behind particles */
+
+body::before {
+    z-index: -2;
+}
+
+
+/* Website content stays above particles */
+
+.main,
+.profile,
+.post-single,
+.tech-card,
+.post-entry,
+.header,
+.footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   MOTION VIDEO BACKGROUND
+========================= */
+
+#bg-video-container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -3;
+    pointer-events: none;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Overlay for readability */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: linear-gradient(
+        rgba(25,50,80,.35),
+        rgba(20,35,60,.45)
+    );
+
+    z-index: -5;
+    pointer-events: none;
+}
+
+
+/* Keep your sidebar and content above */
+
+.custom-sidebar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.main,
+.profile,
+.post-entry,
+.post-single,
+.tech-card {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+/* =========================
+   MOTION BACKGROUND TEXT STYLE
+========================= */
+
+
+/* Main headings */
+h1,
+h2,
+h3 {
+    color: #ffffff !important;
+
+    text-shadow:
+        0 0 8px rgba(0,255,255,0.8),
+        0 0 20px rgba(0,120,255,0.6);
+}
+
+
+/* Normal text */
+p,
+li {
+    color: rgba(255,255,255,0.9);
+}
+
+
+/* Profile description */
+.home-info .profile_inner p,
+.home-info .profile_inner h3 {
+    color:white !important;
+
+    text-shadow:
+        0 0 8px rgba(0,255,255,0.5);
+}
+
+
+/* Sidebar text */
+.sidebar-profile h2,
+.sidebar-profile p,
+.sidebar-menu a {
+    color:white !important;
+
+    text-shadow:
+        0 0 8px rgba(0,255,255,0.5);
+}
+
+
+/* Buttons */
+.buttons a {
+    background: rgba(0,120,255,0.35);
+    color:white !important;
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    box-shadow:
+        0 0 15px rgba(0,255,255,0.4);
+}
+
+
+/* =========================
+   PORTFOLIO TOP SLIDER
+========================= */
+
+.portfolio-wrapper {
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+.portfolio-showcase {
+
+    width:100%;
+
+    max-width:1200px;
+
+    height:380px;
+
+    margin:40px auto;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+.portfolio-slide {
+
+    width:100%;
+
+    height:100%;
+
+    padding:60px;
+
+    display:none;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+
+
+.portfolio-slide.active {
+
+    display:flex;
+
+}
+
+
+
+.portfolio-slide h1 {
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    color:white !important;
+
+}
+
+
+
+.portfolio-slide p {
+
+    max-width:800px;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    color:white;
+
+}
+
+
+/* Arrows */
+
+.portfolio-arrow {
+
+    font-size:40px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.portfolio-arrow:hover {
+
+    color:#00ffff;
+
+    transform:scale(1.2);
+
+}
+
+
+/* View Project Button */
+
+.portfolio-button {
+
+    margin-top:25px;
+
+    padding:12px 35px;
+
+    border-radius:30px;
+
+    background:rgba(0,120,255,.35);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    color:white !important;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+
+.portfolio-button:hover {
+
+    background:#00ffff;
+
+    color:#003b5c !important;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* Dots */
+
+.portfolio-dots {
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+
+.dot {
+
+    display:inline-block;
+
+    width:12px;
+
+    height:12px;
+
+    margin:6px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.5);
+
+}
+
+
+.dot.active {
+
+    background:#00ffff;
+
+    box-shadow:0 0 15px cyan;
+
+}
+
+
+/* =========================
+   BOTTOM PROJECT CARDS
+========================= */
+
+.portfolio-cards {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+    margin-top:70px;
+
+}
+
+
+.portfolio-card {
+
+    width:100%;
+
+    min-height:260px;
+
+    padding:45px;
+
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+
+    border-radius:25px;
+
+
+    border:1px solid rgba(255,255,255,.25);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+
+    transition:.35s ease;
+
+}
+
+
+.portfolio-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 25px 55px rgba(0,255,255,.30);
+
+}
+
+
+/* =========================
+   PORTFOLIO PROJECT IMAGES
+========================= */
+
+.portfolio-card img {
+
+    width:100%;
+
+    max-width:900px;
+
+    height:300px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
+
+    transition:.35s ease;
+
+}
+
+
+.portfolio-card:hover img {
+
+    transform:scale(1.05);
+
+}
+
+
+.portfolio-card {
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+}
+
+
+.portfolio-card:hover {
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 25px 55px rgba(0,255,255,.25);
+
+}
+
+/* Portfolio View Project Button */
+
+.portfolio-button {
+
+    text-decoration:none !important;
+
+}
+
+.portfolio-button:hover {
+
+    text-decoration:none !important;
+
+}
+
+
+@media(max-width:768px){
+
+    .portfolio-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =========================
+   SIDEBAR PROFILE BOX
+========================= */
+
+
+.sidebar-profile {
+
+    text-align:center;
+
+    padding:20px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+/* Name */
+
+.sidebar-profile h2 {
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+
+
+/* Center menu */
+
+.sidebar-menu {
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.sidebar-menu a {
+
+    width:100%;
+
+    padding:10px;
+
+    border-radius:12px;
+
+}
+
+
+/* Hover effect */
+
+.sidebar-menu a:hover {
+
+    background:rgba(0,255,255,.15);
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================
+   REMOVE TOP HEADER CONTENT
+========================= */
+
+
+.header {
+
+    display:none !important;
+
+}
+
+
+/* Keep sidebar and page working */
+
+.main {
+
+    margin-top:40px;
+
+}
+
+/* =========================
+   EXPERIENCE CARD IMAGES
+========================= */
+
+.skill-image {
+
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 20px;
+
+    filter:
+    drop-shadow(0 0 12px rgba(0,255,255,.6));
+
+    transition:.3s ease;
+
+}
+
+
+.tech-card:hover .skill-image {
+
+    transform:scale(1.15);
+
+}
+
+.sidebar-toggle {
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
 }

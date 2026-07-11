@@ -1,0 +1,35 @@
+<div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+<script>
+tsParticles.load("particles-js", {
+  particles: {
+    number: {
+      value: 70
+    },
+    color: {
+      value: "#00ffff"
+    },
+    links: {
+      enable: true,
+      distance: 150,
+      color: "#00ffff",
+      opacity: 0.25
+    },
+    move: {
+      enable: true,
+      speed: 1
+    },
+    size: {
+      value: 3
+    }
+  }
+});
+</script>
+
+<div id="bg-video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="/video/motion02.mp4" type="video/mp4">
+    </video>
+</div>

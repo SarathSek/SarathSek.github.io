@@ -2,13 +2,10 @@
 title: "Portfolio"
 ---
 
-# My Portfolio
+{{< portfolio-slider >}}
 
-Welcome to my portfolio.
 
-Here you'll find projects from:
 
-- 🎮 Video Game Art
-- 📱 Mobile Development
-- 📊 Data Analytics
-- 🤖 Artificial Intelligence
+
+
+

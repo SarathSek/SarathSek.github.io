@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Smartphone Purchasing Behavior Analysis Using Power BI | Sarath Sek</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+Project Overview
+This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.
+The goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.
+
+Business Questions
+The analysis focused on questions such as:
+
+What factors influence smartphone purchasing decisions?
+Which smartphone features are most important to customers?
+What patterns can be identified from customer data?
+How can visualization help support decision-making?
+
+
+Tools &amp; Technologies Used
+
+Power BI — Interactive dashboards and data visualization
+Excel — Data preparation and exploration
+Data Analysis — Identifying trends and patterns
+Data Visualization — Presenting insights clearly
+
+
+Data Analysis Process
+The project followed a structured analytics workflow:">
+<meta name="author" content="">
+<link rel="canonical" href="https://sarathsek.github.io/blog/smartphone-purchasing-behavior/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1fd1ad8a38ca1b6f5b02a330dc682bb5be451ededc012146b3a5e35ea01634de.css" integrity="sha256-H9GtijjKG29bAqMw3Ggrtb5FHt7cASFGs6XjXqAWNN4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sarathsek.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sarathsek.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sarathsek.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sarathsek.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sarathsek.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sarathsek.github.io/blog/smartphone-purchasing-behavior/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://sarathsek.github.io/blog/smartphone-purchasing-behavior/">
+  <meta property="og:site_name" content="Sarath Sek">
+  <meta property="og:title" content="Smartphone Purchasing Behavior Analysis Using Power BI">
+  <meta property="og:description" content="Project Overview This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.
+The goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.
+Business Questions The analysis focused on questions such as:
+What factors influence smartphone purchasing decisions? Which smartphone features are most important to customers? What patterns can be identified from customer data? How can visualization help support decision-making? Tools &amp; Technologies Used Power BI — Interactive dashboards and data visualization Excel — Data preparation and exploration Data Analysis — Identifying trends and patterns Data Visualization — Presenting insights clearly Data Analysis Process The project followed a structured analytics workflow:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-07-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-07-11T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Smartphone Purchasing Behavior Analysis Using Power BI">
+  <meta name="twitter:description" content="Project Overview This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.
+The goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.
+Business Questions The analysis focused on questions such as:
+What factors influence smartphone purchasing decisions? Which smartphone features are most important to customers? What patterns can be identified from customer data? How can visualization help support decision-making? Tools &amp; Technologies Used Power BI — Interactive dashboards and data visualization Excel — Data preparation and exploration Data Analysis — Identifying trends and patterns Data Visualization — Presenting insights clearly Data Analysis Process The project followed a structured analytics workflow:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://sarathsek.github.io/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Smartphone Purchasing Behavior Analysis Using Power BI",
+      "item": "https://sarathsek.github.io/blog/smartphone-purchasing-behavior/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Smartphone Purchasing Behavior Analysis Using Power BI",
+  "name": "Smartphone Purchasing Behavior Analysis Using Power BI",
+  "description": "\nProject Overview This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.\nThe goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.\nBusiness Questions The analysis focused on questions such as:\nWhat factors influence smartphone purchasing decisions? Which smartphone features are most important to customers? What patterns can be identified from customer data? How can visualization help support decision-making? Tools \u0026amp; Technologies Used Power BI — Interactive dashboards and data visualization Excel — Data preparation and exploration Data Analysis — Identifying trends and patterns Data Visualization — Presenting insights clearly Data Analysis Process The project followed a structured analytics workflow:\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "\nProject Overview This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.\nThe goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.\nBusiness Questions The analysis focused on questions such as:\nWhat factors influence smartphone purchasing decisions? Which smartphone features are most important to customers? What patterns can be identified from customer data? How can visualization help support decision-making? Tools \u0026 Technologies Used Power BI — Interactive dashboards and data visualization Excel — Data preparation and exploration Data Analysis — Identifying trends and patterns Data Visualization — Presenting insights clearly Data Analysis Process The project followed a structured analytics workflow:\n1. Data Preparation The dataset was reviewed, cleaned, and prepared for analysis.\n2. Data Exploration Different variables were analyzed to understand customer behavior and purchasing trends.\n3. Dashboard Development Power BI was used to create interactive visuals that highlight important patterns and insights.\nKey Insights The dashboard helped reveal:\nCustomer purchasing preferences Important smartphone features influencing decisions Trends within smartphone selections Opportunities for better business understanding Conclusion This project demonstrates how data analytics and visualization can transform raw information into actionable insights.\nBy using Power BI, meaningful patterns can be discovered and presented in a way that supports data-driven decision-making.\nSkills Demonstrated Data Analytics\nPower BI Dashboard Development\nData Processing\nData Visualization\nInsight Discovery\n",
+  "wordCount" : "230",
+  "inLanguage": "en",
+  "datePublished": "2026-07-11T00:00:00Z",
+  "dateModified": "2026-07-11T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sarathsek.github.io/blog/smartphone-purchasing-behavior/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sarath Sek",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sarathsek.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+</header><main class="main">
+
+<div class="page-layout">
+
+
+<aside class="custom-sidebar">
+
+    <div class="sidebar-profile">
+
+        <h2>Sarath Sek</h2>
+
+        <p>
+        Data Analyst & AI Specialist
+        </p>
+
+    </div>
+
+
+    <nav class="sidebar-menu">
+
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="/experience/">Experience</a>
+        <a href="/portfolio/">Portfolio</a>
+
+    </nav>
+
+<div class="sidebar-toggle">
+
+<button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+
+    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+    </svg>
+
+</button>
+
+</div>
+
+
+
+</aside>
+
+
+
+<div class="page-content">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Smartphone Purchasing Behavior Analysis Using Power BI
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-07-11 00:00:00 +0000 UTC'>July 11, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p><img alt="Smartphone Dashboard" loading="lazy" src="/images/Smartphone_Dashboard.png"></p>
+<h2 id="project-overview">Project Overview<a hidden class="anchor" aria-hidden="true" href="#project-overview">#</a></h2>
+<p>This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.</p>
+<p>The goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.</p>
+<hr>
+<h2 id="business-questions">Business Questions<a hidden class="anchor" aria-hidden="true" href="#business-questions">#</a></h2>
+<p>The analysis focused on questions such as:</p>
+<ul>
+<li>What factors influence smartphone purchasing decisions?</li>
+<li>Which smartphone features are most important to customers?</li>
+<li>What patterns can be identified from customer data?</li>
+<li>How can visualization help support decision-making?</li>
+</ul>
+<hr>
+<h2 id="tools--technologies-used">Tools &amp; Technologies Used<a hidden class="anchor" aria-hidden="true" href="#tools--technologies-used">#</a></h2>
+<ul>
+<li><strong>Power BI</strong> — Interactive dashboards and data visualization</li>
+<li><strong>Excel</strong> — Data preparation and exploration</li>
+<li><strong>Data Analysis</strong> — Identifying trends and patterns</li>
+<li><strong>Data Visualization</strong> — Presenting insights clearly</li>
+</ul>
+<hr>
+<h2 id="data-analysis-process">Data Analysis Process<a hidden class="anchor" aria-hidden="true" href="#data-analysis-process">#</a></h2>
+<p>The project followed a structured analytics workflow:</p>
+<h3 id="1-data-preparation">1. Data Preparation<a hidden class="anchor" aria-hidden="true" href="#1-data-preparation">#</a></h3>
+<p>The dataset was reviewed, cleaned, and prepared for analysis.</p>
+<h3 id="2-data-exploration">2. Data Exploration<a hidden class="anchor" aria-hidden="true" href="#2-data-exploration">#</a></h3>
+<p>Different variables were analyzed to understand customer behavior and purchasing trends.</p>
+<h3 id="3-dashboard-development">3. Dashboard Development<a hidden class="anchor" aria-hidden="true" href="#3-dashboard-development">#</a></h3>
+<p>Power BI was used to create interactive visuals that highlight important patterns and insights.</p>
+<hr>
+<h2 id="key-insights">Key Insights<a hidden class="anchor" aria-hidden="true" href="#key-insights">#</a></h2>
+<p>The dashboard helped reveal:</p>
+<ul>
+<li>Customer purchasing preferences</li>
+<li>Important smartphone features influencing decisions</li>
+<li>Trends within smartphone selections</li>
+<li>Opportunities for better business understanding</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>This project demonstrates how data analytics and visualization can transform raw information into actionable insights.</p>
+<p>By using Power BI, meaningful patterns can be discovered and presented in a way that supports data-driven decision-making.</p>
+<hr>
+<h2 id="skills-demonstrated">Skills Demonstrated<a hidden class="anchor" aria-hidden="true" href="#skills-demonstrated">#</a></h2>
+<p>Data Analytics<br>
+Power BI Dashboard Development<br>
+Data Processing<br>
+Data Visualization<br>
+Insight Discovery</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+
+</div>
+
+</div>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sarathsek.github.io/">Sarath Sek</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a><div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+<script>
+tsParticles.load("particles-js", {
+  particles: {
+    number: {
+      value: 70
+    },
+    color: {
+      value: "#00ffff"
+    },
+    links: {
+      enable: true,
+      distance: 150,
+      color: "#00ffff",
+      opacity: 0.25
+    },
+    move: {
+      enable: true,
+      speed: 1
+    },
+    size: {
+      value: 3
+    }
+  }
+});
+</script>
+
+<div id="bg-video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="/video/motion02.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

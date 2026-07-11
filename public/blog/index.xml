@@ -6,8 +6,38 @@
     <description>Recent content in Blog on Sarath Sek</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sarathsek.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smartphone Purchasing Behavior Analysis Using Power BI</title>
+      <link>https://sarathsek.github.io/blog/smartphone-purchasing-behavior/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sarathsek.github.io/blog/smartphone-purchasing-behavior/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Smartphone Dashboard&#34; loading=&#34;lazy&#34; src=&#34;https://sarathsek.github.io/images/Smartphone_Dashboard.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;This project focuses on analyzing smartphone purchasing behavior using data analytics techniques and Power BI visualization.&lt;/p&gt;
+&lt;p&gt;The goal was to explore customer preferences, identify purchasing patterns, and transform raw data into meaningful insights through interactive dashboards.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;business-questions&#34;&gt;Business Questions&lt;/h2&gt;
+&lt;p&gt;The analysis focused on questions such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What factors influence smartphone purchasing decisions?&lt;/li&gt;
+&lt;li&gt;Which smartphone features are most important to customers?&lt;/li&gt;
+&lt;li&gt;What patterns can be identified from customer data?&lt;/li&gt;
+&lt;li&gt;How can visualization help support decision-making?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tools--technologies-used&#34;&gt;Tools &amp;amp; Technologies Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Power BI&lt;/strong&gt; — Interactive dashboards and data visualization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Excel&lt;/strong&gt; — Data preparation and exploration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Analysis&lt;/strong&gt; — Identifying trends and patterns&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Visualization&lt;/strong&gt; — Presenting insights clearly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;data-analysis-process&#34;&gt;Data Analysis Process&lt;/h2&gt;
+&lt;p&gt;The project followed a structured analytics workflow:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Can a Logged-In Survey Really Be Anonymous? A Data Ethics Perspective</title>
       <link>https://sarathsek.github.io/blog/first-blog/</link>

@@ -52,7 +52,7 @@ Texturing
 ">
 <meta name="author" content="">
 <link rel="canonical" href="https://sarathsek.github.io/experience/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8ae30937fe9421a112f7cc4e8c4102587c996904fc63c55a1b04ac57a0cd8b29.css" integrity="sha256-iuMJN/6UIaES98xOjEECWHyZaQT8Y8VaGwSsV6DNiyk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1fd1ad8a38ca1b6f5b02a330dc682bb5be451ededc012146b3a5e35ea01634de.css" integrity="sha256-H9GtijjKG29bAqMw3Ggrtb5FHt7cASFGs6XjXqAWNN4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://sarathsek.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://sarathsek.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://sarathsek.github.io/favicon-32x32.png">
@@ -136,57 +136,7 @@ Texturing
 </head>
 <body class="list" id="top">
     <header class="header">
-    <nav class="header-nav">
-        <div class="logo">
-            <a href="https://sarathsek.github.io/" accesskey="h" title="Sarath Sek (Alt + H)">Sarath Sek</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu" class="menu">
-            <li>
-                <a href="https://sarathsek.github.io/about/" title="About">
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sarathsek.github.io/portfolio/" title="Portfolio">
-                    <span>Portfolio</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sarathsek.github.io/blog/" title="Blog">
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sarathsek.github.io/experience/" title="Experience">
-                    <span class="active">Experience</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
+</header><main class="main">
 
 <div class="page-layout">
 
@@ -213,7 +163,32 @@ Texturing
 
     </nav>
 
+<div class="sidebar-toggle">
+
+<button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+
+    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+    </svg>
+
+</button>
+
+</div>
+
+
+
 </aside>
+
 
 <div class="page-content"> 
 <header class="page-header">
@@ -285,7 +260,42 @@ Texturing
         <polyline points="17 11 12 6 7 11"></polyline>
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a>
+</a><div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+<script>
+tsParticles.load("particles-js", {
+  particles: {
+    number: {
+      value: 70
+    },
+    color: {
+      value: "#00ffff"
+    },
+    links: {
+      enable: true,
+      distance: 150,
+      color: "#00ffff",
+      opacity: 0.25
+    },
+    move: {
+      enable: true,
+      speed: 1
+    },
+    size: {
+      value: 3
+    }
+  }
+});
+</script>
+
+<div id="bg-video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="/video/motion02.mp4" type="video/mp4">
+    </video>
+</div>
+
 
 <script>
     let menu = document.getElementById('menu');
