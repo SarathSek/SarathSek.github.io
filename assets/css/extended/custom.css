@@ -10,7 +10,14 @@ body::before {
 
     inset: 0;
 
-    background-image: url("/images/background01.png");
+    background:
+
+    linear-gradient(
+        rgba(25,50,80,.25),
+        rgba(20,35,60,.30)
+    ),
+
+    url("/images/background01.png");
 
     background-size: cover;
 
@@ -18,22 +25,14 @@ body::before {
 
     background-repeat: no-repeat;
 
-    background-attachment: fixed;
-
     z-index: -1;
-
 }
 
 
 body,
-.main,
-.profile,
-.profile_inner,
 .header,
 .footer {
-
     background: transparent !important;
-
 }
 
 
@@ -63,49 +62,41 @@ html[data-theme="dark"] body::before {
 
 
 .main {
-
-    min-height:80vh !important;
-
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 40px;
+    min-height: 80vh;
+    position: relative;
+    z-index: 1;
 }
 
 
 .profile {
 
-    padding-top:0 !important;
+    background: transparent;
+
+    padding-top: 20px;
 
 }
 
 
 .profile_inner {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
 
-    position:relative;
+    padding: 30px;
 
-    padding:40px 50px;
-
-    border-radius:30px;
-
-    border:1px solid rgba(0,120,255,0.25);
-
-    background:rgba(255,255,255,0.10);
-
-    backdrop-filter:blur(12px);
-
-    box-shadow:
-
-        0 20px 50px rgba(0,0,0,0.20),
-
-        0 0 30px rgba(0,120,255,0.15);
-
-    margin-top:-100px !important;
-
+    margin-top: -70px;
 }
 
 
 
 /* Profile image */
 
-.profile img,
-.profile_inner img {
+.home-info .profile img,
+.home-info .profile_inner img {
 
     width:260px !important;
 
@@ -145,7 +136,7 @@ html[data-theme="dark"] body::before {
 
 /* Profile text glow */
 
-.profile_inner h1 {
+.home-info .profile_inner h1 {
 
     text-shadow:
 
@@ -157,8 +148,9 @@ html[data-theme="dark"] body::before {
 
 
 
-.profile_inner h3,
-.profile_inner p {
+.home-info .profile_inner h3,
+.home-info .profile_inner p {
+
 
     color:var(--primary);
 
@@ -215,21 +207,17 @@ html[data-theme="dark"] body::before {
 
 .post-single {
 
-    background:rgba(255,255,255,0.88);
+    background: transparent;
 
-    border-radius:25px;
+    box-shadow: none;
 
-    padding:45px;
+    border-radius: 0;
 
-    margin:40px auto;
+    padding: 0;
 
-    max-width:1200px;
+    max-width: 100%;
 
-    box-shadow:
-
-        0 20px 50px rgba(0,0,0,0.18);
-
-    backdrop-filter:blur(12px);
+    margin: 0;
 
 }
 
@@ -237,19 +225,24 @@ html[data-theme="dark"] body::before {
 
 .post-entry {
 
-    background:rgba(255,255,255,0.88);
+    background: rgba(255,255,255,.72);
 
-    border-radius:20px;
+    backdrop-filter: blur(14px);
 
-    padding:30px;
+    border-radius: 18px;
 
-    margin-bottom:25px;
+    border: 1px solid rgba(255,255,255,.30);
 
     box-shadow:
+        0 10px 30px rgba(0,0,0,.15);
 
-        0 10px 30px rgba(0,0,0,0.15);
+    transition: .3s;
 
-    backdrop-filter:blur(10px);
+}
+
+.post-entry:hover{
+
+    transform: translateY(-6px);
 
 }
 
@@ -416,21 +409,361 @@ html[data-theme="dark"] body::before {
 }
 
 
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px) {
+
+    .tech-grid {
+        grid-template-columns:1fr !important;
+    }
+
+
+    .home-info .profile_inner {
+
+        padding:20px;
+        margin-top:0;
+
+    }
+
+
+    .home-info .profile img,
+    .home-info .profile_inner img {
+
+        width:180px !important;
+        height:180px !important;
+
+    }
+
+}
+
+
+
+/* =========================
+   SIDEBAR CARD STYLE
+========================= */
+
+.custom-sidebar {
+
+    background:rgba(255,255,255,.80);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border-radius:20px;
+
+}
+
+
+
+/* =========================
+   BLOG TYPOGRAPHY
+========================= */
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+
+    color:#1d5ea8;
+
+    font-weight:700;
+
+    margin-top:40px;
+
+}
+
+
+.post-content p {
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+}
+
+
+.post-content ul,
+.post-content ol {
+
+    padding-left:28px;
+
+}
+
+
+.post-content li {
+
+    margin:10px 0;
+
+}
+
+
+.post-content img {
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+}
+
+
+
+/* =========================
+   FIXED LEFT SIDEBAR
+========================= */
+
+
+.page-layout {
+
+    display:flex;
+
+}
+
+
+/* Sidebar stays fixed on left */
+
+.custom-sidebar {
+
+    position:fixed;
+
+    left:25px;
+
+    top:25px;
+
+    width:220px;
+
+    height:calc(100vh - 50px);
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.18);
+
+    z-index:1000;
+
+}
+
+
+/* =========================
+   SIDEBAR TEXT STYLE
+========================= */
+
+.sidebar-profile {
+
+    text-align:center;
+
+}
+
+
+.sidebar-profile h2 {
+
+    margin-top:0;
+
+    color:#0f3d66 !important;
+
+    font-weight:700;
+
+    text-shadow:
+        0 0 8px rgba(0,120,255,.20);
+
+}
+
+
+.sidebar-profile p {
+
+    font-size:14px;
+
+    color:#444 !important;
+
+    font-weight:500;
+
+}
+
+
+.sidebar-menu a {
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#0f3d66 !important;
+
+    transition:.3s;
+
+}
+
+
+.sidebar-menu a:hover {
+
+    color:#0078ff !important;
+
+    transform:translateX(5px);
+
+}
+
+
+/* =========================
+   DARK MODE SIDEBAR TEXT
+========================= */
+
+html[data-theme="dark"] .sidebar-profile h2 {
+
+    color:#66b3ff !important;
+
+}
+
+
+html[data-theme="dark"] .sidebar-profile p {
+
+    color:rgba(255,255,255,.75) !important;
+
+}
+
+
+html[data-theme="dark"] .sidebar-menu a {
+
+    color:#66b3ff !important;
+
+}
+
+
+html[data-theme="dark"] .sidebar-menu a:hover {
+
+    color:white !important;
+
+}
+
+/* =========================
+   SIDEBAR LINKS
+========================= */
+
+.sidebar-menu {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:30px;
+
+}
+
+
+.sidebar-menu a {
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#163a5f !important;
+
+    transition:.3s;
+
+}
+
+
+.sidebar-menu a:hover {
+
+    color:#005fcc !important;
+
+    transform:translateX(5px);
+
+}
+
+
+
+/* Push page content away from sidebar */
+
+.page-content {
+
+    margin-left:300px;
+
+    width:calc(100% - 300px);
+
+}
+
+
+
+/* =========================
+   HIDE TOP NAVIGATION ONLY
+========================= */
+
+#menu {
+    display:none;
+}
+
+
 /* Mobile */
 
 @media(max-width:768px){
 
-    .tech-grid {
+    .custom-sidebar {
 
-        grid-template-columns:1fr !important;
+        position:relative;
+
+        left:auto;
+
+        top:auto;
+
+        width:auto;
+
+        height:auto;
+
+        margin-bottom:20px;
 
     }
 
 
-    .profile_inner {
+    .page-content {
 
-        padding:30px 20px;
+        margin-left:0;
+
+        width:100%;
 
     }
+
+
+}
+
+
+/* =========================
+   KEEP HOMEPAGE PROFILE NORMAL
+========================= */
+
+.home-info {
+
+    width:100%;
+
+}
+
+
+.home-info .profile_inner {
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+.main,
+.post-entry,
+.tech-card,
+.home-info .profile img {
+
+    transition:all .3s ease;
 
 }
